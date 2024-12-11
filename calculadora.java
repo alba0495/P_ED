@@ -11,6 +11,7 @@ public class Calculadora {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
+        System.out.println("5. Porcentaje");
 
         int operacion = sc.nextInt();
 
@@ -42,6 +43,10 @@ public class Calculadora {
                 } else {
                     System.out.println("Error: No se puede dividir por cero.");
                 }
+                break;
+            case 5:
+                resultado = (num1 * num2) / 100;
+                System.out.println("Resultado: " + resultado);
                 break;
             default:
                 System.out.println("Opción no válida.");
